@@ -1,0 +1,12 @@
+name: UnrealGUI
+version: '${version}'
+main: com.daxton.unrealgui.UnrealGUI
+api-version: '1.16'
+softdepend: [UnrealCore, PlaceholderAPI, Citizens]
+
+folia-supported: true
+
+commands:
+  unrealgui:
+    description: Basic instructions.
+    aliases: ugui

@@ -1,0 +1,5 @@
+
+DeBug:
+  #GUI開關訊息
+  #GUI switch message
+  GUISwitchMessage: false
