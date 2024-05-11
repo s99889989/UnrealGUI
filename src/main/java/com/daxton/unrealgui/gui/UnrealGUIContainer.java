@@ -49,10 +49,10 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
     private List<String> command_cooldown = new ArrayList<>();
 
     public UnrealGUIContainer(String guiName, FileConfiguration fileConfiguration) {
+
         super(guiName, fileConfiguration);
         customValue.clear();
         applyFunctionToFields(this::placeholder);
-
 
     }
 
@@ -70,6 +70,7 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
     //更新佔位符
     public void placeholderChange(){
 
+        //定時更新佔位符
         schedulerRunnable = new SchedulerRunnable() {
             @Override
             public void run() {
@@ -105,29 +106,32 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
 
         if(button == MouseButtonType.Left && action == MouseActionType.Off){
 
-
+            //關閉GUI
             boolean closeGUI = getFileConfiguration().getBoolean(buttonModule.getFilePath()+".Close");
             if(closeGUI){
                 getPlayer().closeInventory();
 //                UnrealCoreAPI.inst(this.getPlayer()).getGUIHelper().closeGUI();
             }
 
+            //打開GUI
             String toGUI = getFileConfiguration().getString(buttonModule.getFilePath()+".ToGUI");
             if(toGUI != null){
                 GUIController.open(getPlayer(), toGUI);
             }
 
+            //打開連結
             String openUrl = getFileConfiguration().getString(buttonModule.getFilePath()+".OpenUrl");
             if(openUrl != null){
                 UnrealCoreAPI.inst(getPlayer()).getCommonHelper().openURL(openUrl);
             }
 
+            //如果冷卻還沒到就不執行以下動作
             if(command_cooldown.contains(id)){
                 return;
             }
 
+            //指令冷卻
             int commandCoolDownTick = getFileConfiguration().getInt(buttonModule.getFilePath()+".CommandCoolDown");
-
             if(commandCoolDownTick > 0){
                 command_cooldown.add(id);
                 SchedulerFunction.runLater(UnrealGUI.unrealCorePlugin.getJavaPlugin(), ()->{
@@ -135,6 +139,7 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
                 }, commandCoolDownTick);
             }
 
+            //指令
             List<String> commandList = getFileConfiguration().getStringList(buttonModule.getFilePath()+".Command");
             if(commandList.isEmpty()){
                 String commandString = getFileConfiguration().getString(buttonModule.getFilePath()+".Command");
@@ -155,6 +160,7 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
                 });
             }
 
+            //條件式指令
             if(getFileConfiguration().contains(buttonModule.getFilePath()+".CommandCondition")){
                 YmlFileUtil.sectionList(getFileConfiguration(), buttonModule.getFilePath()+".CommandCondition").forEach(key->{
                     String condition = getFileConfiguration().getString(buttonModule.getFilePath()+".CommandCondition."+key+".Condition");
@@ -188,16 +194,23 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
         if(stop){
             return;
         }
+
+        //Hover的顯示組建設定
         String hover = getFileConfiguration().getString(moduleComponents.getFilePath()+".Hover", "");
         List<ModuleData> moduleDataList = GUIController.moduleDataMap.get(hover);
         if(moduleDataList == null){
             return;
         }
+
+        //離開組件範圍
         if(hoverType == HoverType.LEAVE){
             List<String> stringList = GUIController.moduleIDList(moduleDataList);
             UnrealCoreAPI.inst(getPlayer()).getGUIHelper().removeTopModule(stringList);
         }
+        //進入組件範圍
         if(hoverType == HoverType.ENTER){
+
+            //延遲避免取消後出發  就不顯示
             SchedulerFunction.runLater(UnrealGUI.unrealCorePlugin.getJavaPlugin(), ()->{
                 if(moduleComponents instanceof SlotModule || moduleComponents instanceof ItemModule){
                     if(!haveItem){
@@ -216,11 +229,14 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
     @Override
     public void close() {
         stop = true;
+        //取消佔位符更新任務
         if(schedulerRunnable != null){
             if(!schedulerRunnable.isCancelled()){
                 schedulerRunnable.cancel();
             }
         }
+
+        //把存在客戶端的佔位符值清除
         if(Bukkit.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null){
             List<String> customValueList = new ArrayList<>();
             customValue.forEach((content, contentChange) -> customValueList.add(content));
