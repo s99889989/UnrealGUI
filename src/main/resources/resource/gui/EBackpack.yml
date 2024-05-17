@@ -36,7 +36,7 @@ ContentList:
 #--------------------------#
   Slot0:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -54,7 +54,7 @@ ContentList:
 
   Slot1:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -71,7 +71,7 @@ ContentList:
     Y: 17
   Slot2:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -88,7 +88,7 @@ ContentList:
     Y: 17
   Slot3:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -105,7 +105,7 @@ ContentList:
     Y: 35
   Slot4:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -125,7 +125,7 @@ ContentList:
 #--------------------------#
   Slot5:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -141,7 +141,7 @@ ContentList:
     Y: 7
   Slot6:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -157,7 +157,7 @@ ContentList:
     Y: 25
   Slot7:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -173,7 +173,7 @@ ContentList:
     Y: 43
   Slot8:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -189,7 +189,7 @@ ContentList:
     Y: 61
   Slot45:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -207,7 +207,7 @@ ContentList:
 #--------------------------#
   Slot9:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -223,7 +223,7 @@ ContentList:
     Y: 83
   Slot10:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -239,7 +239,7 @@ ContentList:
     Y: 83
   Slot11:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -255,7 +255,7 @@ ContentList:
     Y: 83
   Slot12:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -271,7 +271,7 @@ ContentList:
     Y: 83
   Slot13:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -287,7 +287,7 @@ ContentList:
     Y: 83
   Slot14:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -303,7 +303,7 @@ ContentList:
     Y: 83
   Slot15:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -319,7 +319,7 @@ ContentList:
     Y: 83
   Slot16:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -335,7 +335,7 @@ ContentList:
     Y: 83
   Slot17:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -354,7 +354,7 @@ ContentList:
 #--------------------------#
   Slot18:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -370,7 +370,7 @@ ContentList:
     Y: 101
   Slot19:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -386,7 +386,7 @@ ContentList:
     Y: 101
   Slot20:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -402,7 +402,7 @@ ContentList:
     Y: 101
   Slot21:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -418,7 +418,7 @@ ContentList:
     Y: 101
   Slot22:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -434,7 +434,7 @@ ContentList:
     Y: 101
   Slot23:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -450,7 +450,7 @@ ContentList:
     Y: 101
   Slot24:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -466,7 +466,7 @@ ContentList:
     Y: 101
   Slot25:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -482,7 +482,7 @@ ContentList:
     Y: 101
   Slot26:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -500,7 +500,7 @@ ContentList:
 #--------------------------#
   Slot27:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -516,7 +516,7 @@ ContentList:
     Y: 119
   Slot28:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -532,7 +532,7 @@ ContentList:
     Y: 119
   Slot29:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -548,7 +548,7 @@ ContentList:
     Y: 119
   Slot30:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -564,7 +564,7 @@ ContentList:
     Y: 119
   Slot31:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -580,7 +580,7 @@ ContentList:
     Y: 119
   Slot32:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -596,7 +596,7 @@ ContentList:
     Y: 119
   Slot33:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -612,7 +612,7 @@ ContentList:
     Y: 119
   Slot34:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -628,7 +628,7 @@ ContentList:
     Y: 119
   Slot35:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -646,7 +646,7 @@ ContentList:
 #--------------------------#
   Slot36:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -662,7 +662,7 @@ ContentList:
     Y: 141
   Slot37:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -678,7 +678,7 @@ ContentList:
     Y: 141
   Slot38:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -694,7 +694,7 @@ ContentList:
     Y: 141
   Slot39:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -710,7 +710,7 @@ ContentList:
     Y: 141
   Slot40:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -726,7 +726,7 @@ ContentList:
     Y: 141
   Slot41:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -742,7 +742,7 @@ ContentList:
     Y: 141
   Slot42:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -758,7 +758,7 @@ ContentList:
     Y: 141
   Slot43:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255
@@ -774,7 +774,7 @@ ContentList:
     Y: 141
   Slot44:
     Type: Slot
-    Hover: 'item'
+    Tip: 'default'
     Image: 'mc/gui/slot.png'
     Color: '0xffffff'
     Transparent: 255

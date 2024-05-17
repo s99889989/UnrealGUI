@@ -16,6 +16,7 @@ import org.bukkit.entity.Player;
 
 import java.io.File;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class GUIController {
     //GUI列表
@@ -24,6 +25,8 @@ public class GUIController {
     public static Map<String, List<ModuleData>> moduleDataMap = new HashMap<>();
     //設定檔
     public static FileConfiguration config;
+    //置頂模塊緩存
+    public static Map<String, List<String>> topModuleCache = new HashMap<>();
 
     //讀取設定
     public static void load(){
@@ -44,6 +47,25 @@ public class GUIController {
 
     }
 
+    public static void reload(){
+        moduleDataMap.clear();
+        unrealCoreGUIMap.clear();
+
+        load();
+
+        moduleDataMap.forEach((key, moduleDataList) -> {
+            UnrealCoreAPI.inst().getGUIHelper().addTopModuleCache(key, moduleDataList);
+        });
+
+    }
+
+    //設置置頂模塊緩存
+    public static void setTopModuleCache(Player player){
+        moduleDataMap.forEach((key, moduleDataList) -> {
+            UnrealCoreAPI.inst(player).getGUIHelper().addTopModuleCache(key, moduleDataList);
+        });
+    }
+
     //把模塊列表轉成ID列表
     public static List<String> moduleIDList(List<ModuleData> moduleDataList){
         List<String> stringList = new ArrayList<>();
@@ -53,11 +75,7 @@ public class GUIController {
         return stringList;
     }
 
-    public static void reload(){
-        unrealCoreGUIMap.clear();
 
-        load();
-    }
 
     //是否包含此GUI
     public static boolean contain(String guiName){

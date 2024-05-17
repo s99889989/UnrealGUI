@@ -23,8 +23,8 @@ public class GUIListener implements Listener {
 
     @EventHandler//當玩家連線成功
     public void onPlayerJoin(PlayerConnectionSuccessfulEvent event) {
-
-
+        Player player = event.getPlayer();
+        GUIController.setTopModuleCache(player);
     }
 
     @EventHandler//當玩家打開GUI
