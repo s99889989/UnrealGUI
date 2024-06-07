@@ -197,7 +197,7 @@ public class UnrealGUIContainer extends UnrealCoreGUI {
 
         //Hover的顯示組建設定
         String hover = getFileConfiguration().getString(moduleComponents.getFilePath()+".Hover", "");
-        List<ModuleData> moduleDataList = GUIController.moduleDataMap.get(hover);
+        List<ModuleData> moduleDataList = GUIController.topModuleCache.get(hover);
         if(moduleDataList == null){
             return;
         }
